@@ -1,3 +1,5 @@
-body {
-    background-color: aquamarine;
+header {
+    background-color: gray;
+    text-align: center;
+    border-bottom: 2px solid goldenrod
 }
