@@ -3,3 +3,11 @@ header {
     text-align: center;
     border-bottom: 2px solid goldenrod
 }
+.section-title {
+    color: goldenrod;
+    font-size: 24px;
+}
+
+.subsection-title {
+    font-style: italic;
+}
