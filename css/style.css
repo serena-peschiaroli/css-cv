@@ -1,13 +1,129 @@
-header {
-    background-color: gray;
-    text-align: center;
-    border-bottom: 2px solid goldenrod
-}
-.section-title {
-    color: goldenrod;
-    font-size: 24px;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.subsection-title {
-    font-style: italic;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #000000, #3b0a0a);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #ff0000;
+}
+
+header p.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ff0000;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 5px;
+}
+
+.skills ul,
+.languages ul,
+.experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills ul li,
+.languages ul li,
+.experience ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills ul li::before,
+.languages ul li::before,
+.experience ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff0000;
+    font-size: 1.5em;
+    line-height: 0;
+    top: 0.5em;
+}
+
+.education-item,
+.experience-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #00ff00;
+    color: #e0e0e0;
+}
+
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
